@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -21,7 +24,7 @@ body{
     background: linear-gradient(to right, red, blue,yellow,purple );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 5em;
+    font-size: 2em;
     font-weight: bold;
     top: 0;
     left: 0;
@@ -51,17 +54,17 @@ body{
     align-items: flex-start;
     position: fixed;
     top: 0;
-    right: -320px;
+    right: -100%;
     height: 200vh;
     transition: 0.5s ease;
-    width: 300px;
+    width: 60%;
     background-color: rgb(77, 8, 107);
     box-shadow: 0 40px 60px rgba( 0, 0, 0, 0.03);
     padding: 40px 0 0 0px;
 }
  
 #navbar.active {
-    right: 0px;
+    right: 0%;
 }
 
 .nav-item {
@@ -203,11 +206,11 @@ span {
     color: rgb(184, 95, 223);
 }
 
-.skills {
+#skills {
     padding-bottom: 6em;
 }
 
-.skills h2 {
+#skills h2 {
     text-align: left;
     font-size: 2.5em;
     padding-top: 1em;
@@ -294,6 +297,7 @@ span {
 }
 
 #about {
+    margin-top: 3em;
    padding: 15px;
    color: black;
    background-color: rgb(230, 227, 227);
@@ -308,6 +312,7 @@ span {
 }
 
 .ab-img {
+    background-color: black;
    width: 100%;
    border-radius: 15px;
 }
@@ -322,21 +327,31 @@ span {
  
 #projects h1{
   font-size: 2.5rem;
-  padding: 2em;
+  font-family: 'Dancing script';
+   padding: 1em;
 } 
- 
- 
+  
 .proj h4 {
     margin-top: 13px;
 }
 
 .proj span {
     font-size: 1.1em;
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .proj { 
-    padding: 1em;
+    border-radius: 10px;
+    margin: 2em 2em;
+    box-shadow: 1px 1px 5px rgb(165, 40, 165);
+    padding: 2em 1em;
     position: relative; 
+    transition: 0.5s;
+}
+
+.proj:hover {
+    transform: translateY(0%);
 }
 
 .proj img {
@@ -349,8 +364,8 @@ span {
     font-weight: bold;
     font-size: 2.5em;
     font-family: 'Dancing script';
-
 }
+
 #contact{
     background-color: rgb(230, 227, 227);
     padding-bottom: 4em;
@@ -467,7 +482,6 @@ hr {
  {
 
     .logo {
-        font-size: 10em;
         top: 12px;
     }
 
@@ -773,7 +787,7 @@ hr {
         padding-bottom: 3em;
     }
 
-    .skills {
+    #skills {
         display: none;
     }
 
@@ -796,8 +810,12 @@ hr {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 3rem;
+    } 
+
+    .proj:hover {
+       transform: translateY(-5%);
     }
-  
+
     #about {
         margin-top: 6em;
     }
@@ -855,7 +873,7 @@ hr {
         text-decoration: none;
     }
     
-  .ab-con2 h5 {
+   .ab-con2 h5 {
      display: flex;
    }
  
